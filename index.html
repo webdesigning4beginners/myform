@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Design.css">
+</head>
+<body >
+    
+    <div class="header">
+        
+
+      
+    <h1 class="title"><img src="https://i.pinimg.com/736x/e1/b0/02/e1b002b11e4f0f8533a5c807fe1f415b.jpg">TripAdvisor - Explore the world</h1>
+    </div>
+    
+    <marquee name="news">Hot Sale: Flat 40% off on your first Booking with us</marquee>
+    <br>
+    <br>
+
+<div class="body">
+    <p id="para">Tourism has different meanings in different languages and different regions and can be defined in different ways. The present day tourism is not the same as travels of the early periods of human history. In the language of Jewes, the word ‘Torah’ mean study or search and ‘tour’ seems to have been derived from it.</p>
+   
+    <p id="para">In Latin the original word ‘Tornos’ stands close to it. ‘Tomos’ was a kind of round wheel-like tool hinting at the idea of a travel circuit or a package tour. In Sanskrit, ‘Paryatan’ means leaving one’s residence to travel for the sake of rest and for seeking knowledge.</p>
+    
+    <p id="para">In today’s world, tourism is an important socio-economic activity. Tourism is now recognised as an industry generating a number of social and economic benefits. It promotes national integration and international understanding, helps in improving infrastructure, creates employment opportunities and augments foreign exchange earnings. Tourism is as much a part of socio-economic development as any other related activity. </p>
+
+    <p id="para">The advanced economies of the west and the emerging economies of south-east Asia underline the linkage between tourism and growth. In any area where a place of tourist attraction is located, there exists a tourist economy besides the domestic area economy. It also lends a helping hand to local handicrafts and cultural activities.</p>
+
+    <p id="para">According to Ziffer (1989), “Tourism involves travelling to relatively undisturbed or uncontaminated natural areas with the specific object of studying, admiring and enjoying the scenery and its wild plants and animals, as well as any existing cultural aspects (both past and present) found in these areas”.</p>
+    
+    <p id="listpara">We will provide you in your trip with the following facilities:</p>
+    <ul>
+        <li>Resort with top class rooms</li>
+        <li>Delicious Food that you will remember for your lifetime </li>
+        <li>All famous Tourist Spots including Forest trecking, Beach <etc class=""></etc></li>
+        <li>Package includes your flight tickets too, so no need to worry about anything. Just Chill and Enjoy your trip!</li>
+    </ul>
+
+    <p id="para">We are here to help you out to explore the best places in the world. If Interested, you can fill the form out and we will reach you out soon </p>
+</div>
+    <br>
+    <form id="myform" >
+        
+        <div class="form">
+            <p class="hh"><u>Please Fill this Form</u></p>
+
+        <label>Name:</label>
+        <input type="text" id="username" required />
+        <br>
+        <br>
+        <label>Age:</label>
+        <input type="number" id="age" required />
+        <br>
+        <br>
+        <label>Gender:</label>
+        <input type="radio" name="Age" id="Male" >
+        <label for="Male">Male</label>
+        <input type="radio" name="Age" id="Female" >
+        <label for="Female" >Female</label>
+        <br>
+        <br>
+        <label>Email Address:</label>
+        <input type="email" name="email" required />
+        <br>
+        <br>
+        <label>Type of trip:</label>
+        <input type="radio" name="TypeofTrip" id="oneway">
+        <label for="One way">One way</label>
+        <input type="radio" name="TypeofTrip" id="Roundtrip">
+        <label for="Round Trip" >Round Trip</label>
+        <br>
+        <br>
+        <label>Your Family has:</label>
+        <input type="checkbox" name="Familymembers" id="children">
+        <label id="Children">Children</label>
+
+        <input type="checkbox" name="Familymembers" id="Adults">
+        <label id="Adults">Adults</label>
+
+        <input type="checkbox" name="Familymembers" id="Members with Age>60">
+        <label id="Age>60">Members with Age>60</label>
+
+        <br>
+        <br>
+
+        
+        <label>Places you are planning to visit: </label>
+        <input type="text" name="plannedplace" required />
+        <br>
+        <br>
+        
+        
+        <input type="submit" value="submit"  onclick="myFunction()"   class="submitbutton">
+        
+     </div>
+    </form>
+
+    
+   
+    
+    <marquee><p id="onclicksubmitbuttonmessage"></p></marquee>
+    <script>
+       function myFunction()
+       {
+          let username = prompt("Please Enter Your Name");
+           
+           if (username!=null){
+        document.getElementById("onclicksubmitbuttonmessage").innerHTML = "Hiiii "+ username +"!, We received your details Successfully. We will reach you out shortly. Thanks for your precious time.";
+           }
+           else{
+            document.getElementById("onclicksubmitbuttonmessage").innerHTML = "Hiiii, We received your details Successfully. We will reach you out shortly. Thanks for your precious time.";
+           }
+       }
+       
+    </script>
+</body>
+</html>
